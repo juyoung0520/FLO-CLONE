@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toolbar_heart"
+        android:icon="@drawable/btn_heart_selector"
+        android:title="좋아요"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/toolbar_more"
+        android:icon="@drawable/btn_player_more"
+        android:title="더보기"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/locker_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingBottom="10dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/locker_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보관함"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/locker_profile_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textSize="13sp"
+            android:text="캐릭터1"
+            app:layout_constraintTop_toTopOf="@+id/locker_title_tv"
+            app:layout_constraintEnd_toStartOf="@+id/locker_profile_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/locker_title_tv"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/locker_profile_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/vp_indicator_selected"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintTop_toTopOf="@+id/locker_title_tv"
+            app:layout_constraintEnd_toStartOf="@+id/locker_singin_tv"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/locker_singin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보관함"
+            android:textColor="@color/purple_700"
+            app:layout_constraintTop_toTopOf="@id/locker_title_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/locker_title_tv"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/locker_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:tabMode="scrollable"
+        app:tabInlineLabel="true"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorColor="@color/primary"
+        app:tabRippleColor="#00ff0000"
+        app:tabSelectedTextColor="@color/primary"
+        app:tabTextAppearance="@style/TabTextAppearance"
+        app:layout_constraintTop_toBottomOf="@+id/locker_top_layout" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/locker_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/locker_tl"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/locker_loading_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:indeterminateTint="@color/gray_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

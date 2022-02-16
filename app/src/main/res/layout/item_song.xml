@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:id="@+id/item_track_rank_exp1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/item_track_title_exp1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="라일락"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_track_rank_exp1_tv"
+        app:layout_constraintBottom_toTopOf="@+id/item_track_singer_exp1_tv"/>
+
+    <TextView
+        android:id="@+id/item_track_singer_exp1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="IU"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@+id/item_track_title_exp1_tv"
+        app:layout_constraintStart_toEndOf="@+id/item_track_rank_exp1_tv"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/item_track_play_ib"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:src="@drawable/btn_miniplay_mvplay"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_track_more_ib"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/item_track_more_ib"
+        android:layout_width="25dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:src="@drawable/btn_player_more"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="@+id/item_track_play_ib"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/item_track_play_ib"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

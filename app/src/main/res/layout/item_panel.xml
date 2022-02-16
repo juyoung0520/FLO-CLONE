@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/panel_background_iv"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:src="@drawable/img_default_4_x_1"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/panel_btn_setting_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_main_setting"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/panel_btn_ticket_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_main_ticket"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/panel_btn_setting_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/panel_nugu_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_nugu"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@id/panel_btn_ticket_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/panel_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동할 때 듣는 신나는 댄스"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/panel_nugu_iv" />
+
+    <ImageView
+        android:id="@+id/panel_btn_panel_play_large"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_panel_play_large"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/panel_title_tv"/>
+
+    <TextView
+        android:id="@+id/panel_album_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="총 23곡 2021.08.06"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/panel_btn_album_exp1_iv"/>
+
+    <ImageView
+        android:id="@+id/panel_btn_album_exp1_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img_album_exp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/panel_btn_album_exp2_iv"/>
+
+    <TextView
+        android:id="@+id/panel_album_exp1_text1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Butter"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/panel_btn_album_exp1_iv"
+        app:layout_constraintTop_toTopOf="@+id/panel_btn_album_exp1_iv"
+        app:layout_constraintBottom_toTopOf="@+id/panel_album_exp1_text2_tv"/>
+
+    <TextView
+        android:id="@+id/panel_album_exp1_text2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="방탄소년단"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/panel_album_exp1_text1_tv"
+        app:layout_constraintStart_toEndOf="@id/panel_btn_album_exp1_iv"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_btn_album_exp1_iv" />
+
+    <ImageView
+        android:id="@+id/panel_btn_album_exp2_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img_album_exp2"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/panel_background_iv"/>
+
+    <TextView
+        android:id="@+id/panel_album_exp2_text1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dumb Dumb"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/panel_btn_album_exp2_iv"
+        app:layout_constraintTop_toTopOf="@+id/panel_btn_album_exp2_iv"
+        app:layout_constraintBottom_toTopOf="@+id/panel_album_exp2_text2_tv"/>
+
+    <TextView
+        android:id="@+id/panel_album_exp2_text2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RedVelvet (레드벨벳)"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/panel_album_exp2_text1_tv"
+        app:layout_constraintStart_toEndOf="@id/panel_btn_album_exp2_iv"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_btn_album_exp2_iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
